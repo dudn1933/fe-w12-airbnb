@@ -101,6 +101,14 @@
     padding-top: 5px;
 }
 
+.sun_day {
+    color:#FF9090;
+}
+
+.satur_day {
+    color:#7ED5E4;
+}
+
 .CALENDAR_TABLE_BUTTON {
     text-align: center;
     width:31px;

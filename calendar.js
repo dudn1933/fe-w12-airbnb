@@ -140,10 +140,10 @@ const build = () => {
         cnt = cnt + 1;
 
         if (cnt % 7 == 1) { //일요일 계산
-            cell.innerHTML = `<input type="button" class="CALENDAR_TABLE_BUTTON" value="${i}"></input>`;
+            cell.innerHTML = `<input type="button" class="CALENDAR_TABLE_BUTTON sun_day" value="${i}"></input>`;
         }
         if (cnt % 7 == 0) { // 1주일이 7일 이므로 토요일 계산
-            cell.innerHTML = `<input type="button" class="CALENDAR_TABLE_BUTTON" value="${i}"></input>`;
+            cell.innerHTML = `<input type="button" class="CALENDAR_TABLE_BUTTON satur_day" value="${i}"></input>`;
             row_left = CALENDAR_LEFT.insertRow(); // 줄 추가
         }
     }
@@ -172,10 +172,10 @@ const build = () => {
         cnt2 = cnt2 + 1;
 
         if (cnt2 % 7 == 1) { //일요일 계산
-            cell.innerHTML = `<input type="button" class="CALENDAR_TABLE_BUTTON" value="${i}"></input>`;
+            cell.innerHTML = `<input type="button" id="" class="CALENDAR_TABLE_BUTTON sun_day" value="${i}"></input>`;
         }
         if (cnt2 % 7 == 0) { // 1주일이 7일 이므로 토요일 계산
-            cell.innerHTML = `<input type="button" class="CALENDAR_TABLE_BUTTON" value="${i}"></input>`;
+            cell.innerHTML = `<input type="button" id=""  class="CALENDAR_TABLE_BUTTON satur_day" value="${i}"></input>`;
             row_right = CALENDAR_RIGHT.insertRow(); // 줄 추가
         }
     }
